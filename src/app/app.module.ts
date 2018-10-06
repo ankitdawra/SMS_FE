@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing.module';
 
 import { AppComponent } from './app.component';
-// import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router'
 
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -13,7 +13,11 @@ import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, SidebarComponent, FooterComponent, HomeComponent
+    AppComponent,
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
