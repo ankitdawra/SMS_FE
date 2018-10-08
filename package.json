@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start release.sh && webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js --watch",
+    "run": "pm2 start release.sh",
+    "build-prod": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
